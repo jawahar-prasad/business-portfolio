@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sole & Legacy | Artisan Footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Sole & Legacy</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Collection</a></li>
+            <li><a href="#calculator">Estimate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay">
+            <h1>Handcrafted Excellence</h1>
+            <p>A family tradition of quality leather and timeless style, passed down through three generations.</p>
+            <a href="#products" class="cta-btn">Explore Collection</a>
+        </div>
+    </header>
+
+    <section id="products">
+        <h2 class="section-title">Our Signature Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=80&w=600" alt="Classic Oxford">
+                <div class="card-content">
+                    <h3>Classic Oxford</h3>
+                    <p class="price">$120.00</p>
+                    <p class="desc">Premium Italian leather, perfect for formal occasions.</p>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="shoe-select" data-price="120" value="Classic Oxford" onchange="calculateTotal()">
+                        <span class="checkmark"></span> Add to Order
+                    </label>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600" alt="Urban Sneaker">
+                <div class="card-content">
+                    <h3>Urban Sneaker</h3>
+                    <p class="price">$85.00</p>
+                    <p class="desc">Modern comfort meet heritage craftsmanship.</p>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="shoe-select" data-price="85" value="Urban Sneaker" onchange="calculateTotal()">
+                        <span class="checkmark"></span> Add to Order
+                    </label>
+                </div>
+            </div>
+            <div class="product-card">
+         <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&q=80&w=600" alt="Heritage Boot">
+                <div class="card-content">
+                    <h3>Heritage Boot</h3>
+                    <p class="price">$150.00</p>
+                    <p class="desc">Rugged durability with a refined finish.</p>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="shoe-select" data-price="150" value="Heritage Boot" onchange="calculateTotal()">
+                        <span class="checkmark"></span> Add to Order
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="dark-section">
+        <div class="calc-box">
+            <h2>Order Estimate</h2>
+            <div id="selected-items">No items selected yet.</div>
+            <div class="total-display">
+                Total: <span id="total-price">$0.00</span>
+            </div>
+            <p class="disclaimer">*Tax and shipping calculated at checkout.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>📍 123 Shoemaker Lane, Leather District</p>
+                <p>📞 (555) 123-4567</p>
+                <p>✉️ hello@soleandlegacy.com</p>
+            </div>
+            <div class="feedback-form">
+                <h2>Send Feedback</h2>
+                <form id="feedbackForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="formStatus" class="status-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sole & Legacy Family Business. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
