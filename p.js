@@ -51,7 +51,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         showStatus("Message is too short (min 10 characters).", "red");
     } else {
         // Success
-        showStatus("Thank you, " + name + "! Your message has been sent.", "green");
+        showStatus("Thank you very much, " + name + "! Your message has been sent.", "green");
         this.reset(); // Clear the form fields
     }
 });
@@ -61,4 +61,5 @@ function showStatus(text, color) {
     const statusMsg = document.getElementById('formStatus');
     statusMsg.innerText = text;
     statusMsg.style.color = color;
+
 }
