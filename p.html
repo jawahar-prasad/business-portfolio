@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sole & Legacy | Artisan Footwear</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="p.css">
 </head>
 <body>
 
@@ -13,8 +13,9 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Collection</a></li>
-            <li><a href="#calculator">Estimate</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">cart</a></li>
+            <li><a href="#feedback">feedback</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
 
@@ -27,16 +28,16 @@
     </header>
 
     <section id="products">
-        <h2 class="section-title">Our Signature Collection</h2>
+        <h2 class="section-title">Our Signature Collection </h2>
         <div class="product-grid">
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=80&w=600" alt="Classic Oxford">
                 <div class="card-content">
                     <h3>Classic Oxford</h3>
-                    <p class="price">$120.00</p>
+                    <p class="price">$1200.00</p>
                     <p class="desc">Premium Italian leather, perfect for formal occasions.</p>
                     <label class="checkbox-container">
-                        <input type="checkbox" class="shoe-select" data-price="120" value="Classic Oxford" onchange="calculateTotal()">
+                        <input type="checkbox" class="shoe-select" data-price="1200" value="Classic Oxford" onchange="calculateTotal()">
                         <span class="checkmark"></span> Add to Order
                     </label>
                 </div>
@@ -45,10 +46,10 @@
                 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600" alt="Urban Sneaker">
                 <div class="card-content">
                     <h3>Urban Sneaker</h3>
-                    <p class="price">$85.00</p>
+                    <p class="price">$850.00</p>
                     <p class="desc">Modern comfort meet heritage craftsmanship.</p>
                     <label class="checkbox-container">
-                        <input type="checkbox" class="shoe-select" data-price="85" value="Urban Sneaker" onchange="calculateTotal()">
+                        <input type="checkbox" class="shoe-select" data-price="850" value="Urban Sneaker" onchange="calculateTotal()">
                         <span class="checkmark"></span> Add to Order
                     </label>
                 </div>
@@ -57,10 +58,10 @@
          <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&q=80&w=600" alt="Heritage Boot">
                 <div class="card-content">
                     <h3>Heritage Boot</h3>
-                    <p class="price">$150.00</p>
+                    <p class="price">$1500.00</p>
                     <p class="desc">Rugged durability with a refined finish.</p>
                     <label class="checkbox-container">
-                        <input type="checkbox" class="shoe-select" data-price="150" value="Heritage Boot" onchange="calculateTotal()">
+                        <input type="checkbox" class="shoe-select" data-price="1500" value="Heritage Boot" onchange="calculateTotal()">
                         <span class="checkmark"></span> Add to Order
                     </label>
                 </div>
@@ -68,7 +69,7 @@
         </div>
     </section>
 
-    <section id="calculator" class="dark-section">
+    <section id="cart" class="dark-section">
         <div class="calc-box">
             <h2>Order Estimate</h2>
             <div id="selected-items">No items selected yet.</div>
@@ -79,7 +80,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="feedback">
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h2>Contact Us</h2>
@@ -100,10 +101,36 @@
         </div>
     </section>
 
+    <section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-text">
+            <h2 class="section-title" style="text-align: left;">Our Story</h2>
+            <p>Founded in 2024, ShoeBiz began with a simple mission: to bring premium, stylish footwear to the modern explorer. We believe that a great pair of shoes isn't just an accessory—it's the foundation of your journey.</p>
+            <br>
+            <p>From our retro-inspired runners to our durable urban boots, every pair is crafted with ethically sourced materials and designed for all-day comfort. We don't just sell shoes; we sell confidence.</p>
+            
+            <ul class="about-features">
+                <li>✅ <strong>Premium Materials:</strong> Top-grain leather & breathable mesh.</li>
+                <li>✅ <strong>Hand-Crafted:</strong> Stitched for durability.</li>
+                <li>✅ <strong>Comfort First:</strong> Memory foam insoles in every pair.</li>
+            </ul>
+        </div>
+        
+        <div class="about-image">
+            <img 
+  src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600"
+  alt="Quality Leather Shoes"
+  
+/>
+
+        </div>
+    </div>
+</section>
+
     <footer>
         <p>&copy; 2024 Sole & Legacy Family Business. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="p.js"></script>
 </body>
 </html>
