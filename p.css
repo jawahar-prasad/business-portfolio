@@ -28,7 +28,7 @@ nav ul li a:hover { color: var(--accent); }
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('https://images.unsplash.com/photo-1449247704656-1369149673b1?q=80&w=1200');
     background-size: cover; background-position: center;
@@ -41,7 +41,7 @@ nav ul li a:hover { color: var(--accent); }
 }
 
 /* Products */
-section { padding: 80px 8%; }
+section { padding: 100px 8%; }
 .section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
 .product-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;
@@ -58,7 +58,7 @@ section { padding: 80px 8%; }
 
 /* Calculator Section */
 .dark-section { background: #2c3e50; color: white; text-align: center; }
-.calc-box { max-width: 600px; margin: auto; background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px; }
+.calc-box { max-width: 1000px; margin: auto; background: rgba(255,255,255,0.1); padding: 120px; border-radius: 15px; }
 #selected-items { margin: 20px 0; font-style: italic; color: #bdc3c7; }
 .total-display { font-size: 2rem; font-weight: bold; color: #e67e22; }
 
@@ -66,14 +66,14 @@ section { padding: 80px 8%; }
 .contact-wrapper { display: flex; flex-wrap: wrap; gap: 50px; }
 .contact-info, .feedback-form { flex: 1; min-width: 300px; }
 form input, form textarea {
-    width: 100%; padding: 12px; margin-bottom: 15px;
-    border: 1px solid #ddd; border-radius: 5px;
+    width: 100%; padding: 20px; margin-bottom: 15px;
+    border: 1px solid #ddd; border-radius: 10px;
 }
 .submit-btn {
-    width: 100%; padding: 15px; background: var(--primary);
+    width: 100%; padding: 35px; background: var(--primary);
     color: white; border: none; border-radius: 5px; cursor: pointer;
 }
-.status-msg { margin-top: 15px; font-weight: bold; }
+.status-msg { margin-top: 25px; font-weight: bold; }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -83,7 +83,7 @@ form input, form textarea {
 /* Fallback for images */
 .product-card img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     background-color: #e0e0e0; /* Grey background if image fails */
     display: block;
