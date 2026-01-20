@@ -63,17 +63,17 @@ section { padding: 100px 8%; }
 .total-display { font-size: 2rem; font-weight: bold; color: #e67e22; }
 
 /* Contact & Feedback */
-.contact-wrapper { display: flex; flex-wrap: wrap; gap: 50px; }
-.contact-info, .feedback-form { flex: 1; min-width: 300px; }
+.contact-wrapper { display: flex; flex-wrap: wrap; gap: 70px; }
+.contact-info, .feedback-form { flex: 1; min-width: 400px; }
 form input, form textarea {
-    width: 100%; padding: 20px; margin-bottom: 15px;
-    border: 1px solid #ddd; border-radius: 10px;
+    width: 100%; padding: 30px; margin-bottom: 25px;
+    border: 1px solid #ddd; border-radius: 20px;
 }
 .submit-btn {
-    width: 100%; padding: 35px; background: var(--primary);
+    width: 100%; padding: 45px; background: var(--primary);
     color: white; border: none; border-radius: 5px; cursor: pointer;
 }
-.status-msg { margin-top: 25px; font-weight: bold; }
+.status-msg { margin-top: 35px; font-weight: bold; }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -139,3 +139,4 @@ form input, form textarea {
 .about-image img:hover {
     transform: scale(1.02); /* Slight zoom effect on hover */
 }
+
