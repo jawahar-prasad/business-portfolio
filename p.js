@@ -40,6 +40,36 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     const message = document.getElementById('message').value;
     const statusMsg = document.getElementById('formStatus');
 
+    // --- A. SAVE TO LOCAL STORAGE ---
+    const feedback = { name, email, message, date: new Date().toLocaleString() };
+    
+    let feedbackList = JSON.parse(localStorage.getItem("feedbackList")) || [];
+    feedbackList.push(feedback);
+    localStorage.setItem("feedbackList", JSON.stringify(feedbackList));
+
+    // --- B. DOWNLOAD AS TEXT FILE ---
+    const textData = `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nDate: ${new Date().toLocaleString()}\n\n`;
+
+    const blob = new Blob([textData], { type: "text/plain" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    // Uses the user's name in the filename
+    link.download = `Feedback_${name.replace(/\s+/g, '_')}.txt`; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // --- C. SHOW SUCCESS MESSAGE ---
+    const successDiv = document.getElementById("successMsg");
+    if (successDiv) {
+        successDiv.style.display = "block";
+        // Hide message after 4 seconds
+        setTimeout(() => { successDiv.style.display = "none"; }, 4000);
+    }
+
+    // --- D. CLEAR FORM ---
+    this.reset();
+
     // Email pattern validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
