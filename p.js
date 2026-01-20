@@ -92,3 +92,4 @@ function showStatus(text, color) {
     statusMsg.innerText = text;
     statusMsg.style.color = color;
 }
+
